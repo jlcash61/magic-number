@@ -26,10 +26,10 @@ function kaprekarRoutine(numberStr) {
 
 async function calculate() {
     let numberInput = document.getElementById("number-input").value;
-    if (!/^[0-9]{1,4}$/.test(numberInput) || new Set(numberInput).size === 1) {
-        alert("Please enter a valid 4-digit number with at least two different digits.");
-        return;
-    }
+    //if (!/^[0-9]{1,4}$/.test(numberInput) || new Set(numberInput).size === 1) {
+    //    alert("Please enter a valid 4-digit number with at least two different digits.");
+    //    return;
+    //}
 
     // Automatically pad the number to 4 digits and alert the user
     if (numberInput.length < 4) {
@@ -61,6 +61,7 @@ function showAbout() {
     alert("Kaprekar's Constant App\n\n" +
           "This app demonstrates Kaprekar's Constant, also known as 6174.\n" +
           "For any valid 4-digit number (with at least two different digits),\n" +
+          "you can add zeros in front for smaller numbers i.e. 0024, just no 1111,\n" +
           "the process of arranging digits in descending and ascending order,\n" +
           "subtracting, and repeating, will eventually converge to 6174.\n" +
           "This app allows you to see each iteration of that process. \n" +
