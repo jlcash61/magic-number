@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaprekar's Constant - 6174</title>
+    <link rel="stylesheet" href="styles.css?v=1.5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="prime-background"></div>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="night-mode-toggle" onclick="toggleNightMode()">
+            <span class="slider"></span>
+        </label>
+        <span>Night Mode</span>
+    </div>
+    <div class="container">
+        <h1>Kaprekar's Constant</h1>
+        <div class="card">
+            <label for="number-input">Enter a 4-digit number:</label>
+            <input type="text" id="number-input" maxlength="4" class="input-field" placeholder="example 0420">
+            <button class="button primary-button animated-button" onclick="calculate()">Calculate</button>
+            <div id="result" class="result"></div>
+            <button class="button about-button animated-button" onclick="showAbout()">About</button>
+        </div>
+    </div>
+    <script src="script.js?v=1.5"></script>
+</body>
+</html>
